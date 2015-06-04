@@ -67,6 +67,9 @@
                     </ol>
                     </li>
 					</ol>
+                    <p class="fragment fade-in">
+                    now your turn
+                    <i class="fa fa-hand-o-right"></i>
 				</section>
                
 				<section>
@@ -99,22 +102,84 @@
                     when lists are so wonderful...
 					</p>
 					<ul class="fragment fade-in">
-						<li>looking up</li>
-						<li>speed (linear time)</li>
+						<li>word: definition (close associations)</li>
+						<li>speed (constant time)</li>
 						<li>memory (plays nicely with json)</li>
 					</ul>
-					<pre><code>
-                    [EXAMPLE]
-                    </code></pre>
+                    <p class="fragment fade-in">  
+                    The Bad: 
+                    <font color="red">UNORDERED </font>
+                    </p>
 				</section>
 				<section>
                 <i class="fa fa-book"></i>
 					<h2>Writing a Dictionary</h2>
-                    <p>dictioanry syntax, example, exercise</p>
+                    <p> so many emails to remember ;(</p>
 					<pre><code>
-                    [EXAMPLE]
+                    #contacts
+                    emails = {'mark': 'mark@banana.com', 
+                    'tom' : 'cool@apple.com', 
+                    'brendan' : 'thecoolest@papya.com', 
+                    'zev' : 'zen@bahamas.com'}
+
+                    #live code: 
+                        #look up zev's email
+                        #add a new email
+                        #change mark's email
+                    </code></pre>
+                    <p class="fragment fade-in">
+                    now your turn
+                    <i class="fa fa-hand-o-right"></i>
+				</section>
+				<section>
+                <i class="fa fa-book"></i>
+					<h2>Playing with Dictionaries</h2>
+                    <p>len, get, update </p>
+					<pre><code class="fragment fade-in">
+                    empty_dict = {}
+
+                    len(empty_dict)
+                    #show how many entries are in your dictionary
+                    </code></pre>
+					<pre><code class="fragment fade-in">
+                    empty_dict['mark'] 
+                    #uh oh, nothing's there!
+
+                    empty_dict.get('mark', 'cool')
+                    </code></pre>
+					<pre><code class="fragment fade-in">
+                    #two dictionaries --> one!
+
+                    empty_dict.update(existing_dict)
+
                     </code></pre>
 				</section>
+                <section>
+                    <p class="fragment fade-in">
+                    now your turn
+                    <i class="fa fa-hand-o-right"></i>
+                    <br>
+                    (as a grocery store owner)
+                    <ol class="fragment fade-in">
+                    <li class="fragment fade-in">create inventory of fruit 
+                    <ul>
+                    <li>2 bananas, 1 apple, 5 oranges, 3 grapefruits
+                    </ul>
+                    </li>
+                    <li class="fragment fade-in">Tom buys 3 oranges
+                    <ul>
+                    <li>decrease the number of oranges to 2</li>
+                    </ul>
+                    </li>
+                    <li class="fragment fade-in">Expand store to veggies
+                    <ul>
+                    <li>add three veggies of your choice</li>
+                    </ul>
+                    </li>
+                    </ol>
+                    </p>
+                </section>
+
                 </section>
 
                 <!-- Loops -->
@@ -123,6 +188,12 @@
                 <i class="fa fa-circle-o-notch fa-spin"></i>
 					<h2>Caught in a loop</h2>
                     <p>iterating through lists, dictionaries</p>
+					<pre><code class="fragment fade-in">
+
+                    #loops
+                    for k, v in dict.items():
+                        print k, v
+                    </code></pre>
 					<pre><code>
                     [EXAMPLE]
                     </code></pre>
