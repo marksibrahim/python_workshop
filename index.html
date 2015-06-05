@@ -55,15 +55,27 @@
 					<p>
                     Text Editor, Command Line, Machine Code
 					</p>
+                    <p style="color:#93a1a1;" class="fragment fade-in"># python comment </p>
 				</section>
 				<section>
 					<h1>Hello World</h1>
 					<ol class="fragment fade-in">
-                    <li>text editor: print "hi there!"</li>
-                    <li>command line: 
+                    <li>text editor: <br> 
+                    <span style="color:#268bd2;">print</span> 
+                    <span style="color:#2aa198;">"hi there!"</span></li>
+                    <br>
                     <ul>
-                    <li>cd</li>
-                    <li>python [program].py</li>
+                    <li class="fragment fade-in">save as "hello.py"</li>
+                    </ul>
+                    <li class="fragment fade-in">command line: 
+                    <br>
+                    <span class="fragment fade-in">
+                    $ cd /Desktop/workshop
+                    </span>
+                    <br>
+                    <span class="fragment fade-in">
+                    $ python hello.py 
+                    </span>
                     </ol>
                     </li>
 					</ol>
@@ -188,22 +200,66 @@
                 <i class="fa fa-circle-o-notch fa-spin"></i>
 					<h2>Caught in a loop</h2>
                     <p>iterating through lists, dictionaries</p>
-					<pre><code class="fragment fade-in">
-
-                    #loops
-                    for k, v in dict.items():
-                        print k, v
-                    </code></pre>
+                    <br>
+                    <br>
 					<pre><code>
-                    [EXAMPLE]
+                names = ['mark', 'tom', 'zev', 'brendan']
                     </code></pre>
 				</section>
+                <section>
+					<pre><code>
+                names = ['mark', 'tom', 'zev', 'brendan']
+                    </code></pre>
+                
+                <br>
+                <br>
+                <h1 style="text-transform: lowercase; font-size: 120px;">
+                <span style="color:#268bd2;" class="fragment fade-in">
+                for 
+                </span>
+                <span class="fragment fade-in">
+                name
+                </span>
+                <span style="color:#268bd2;" class="fragment fade-in">
+                in 
+                </span>
+                <span style="color:#b58900;" class="fragment fade-in">
+                names
+                </span>
+                </h1>
+                </section>
 				<section>
 					<h2>Keeping track of your steps</h2>
-                    <p>enumerate (beauty of python compared to C)</p>
-					<pre><code>
-                    [EXAMPLE]
-                    </code></pre>
+                    <p>enumerate 
+                    <span style="color:#93a1a1;" class="fragment fade-in">#beauty of python vs. C</span></p>
+                <br>
+                <h1 style="text-transform: lowercase; font-size: 50px;">
+                <span style="color:#268bd2;" class="fragment fade-in">
+                for 
+                </span>
+                <span class="fragment fade-in">
+                i, name
+                </span>
+                <span style="color:#268bd2;" class="fragment fade-in">
+                in 
+                </span>
+                <span class="fragment fade-in">
+                enumerate(
+                </span>
+                <span style="color:#b58900;" class="fragment fade-in">
+                names
+                </span>
+                <span class="fragment fade-in">
+                ):
+                </span>
+                <br>
+                <span style="color:#268bd2;" class="fragment fade-in">
+                print
+                </span>
+                <span class="fragment fade-in">
+                i, name
+                </span>
+                </h1>
 				</section>
 				</section>
 
