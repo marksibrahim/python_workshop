@@ -54,11 +54,36 @@
 					<p>
                     Text Editor, Command Line, Machine Code
 					</p>
+                    <p style="color:#93a1a1;" class="fragment fade-in"># python comment </p>
 				</section>
 				<section>
-					<h1>Hellow World</h1>
-					<p>
-					</p>
+					<h1>Hello World</h1>
+					<ol class="fragment fade-in">
+                    <li>text editor: <br> 
+                    <span style="color:#268bd2;">print(</span> 
+                    <span style="color:#2aa198;">"hi there!"</span>
+                    <span style="color:#268bd2;">)</span> </li>
+                    <br>
+                    <ul>
+                    <li class="fragment fade-in">save as "hello.py"</li>
+                    </ul>
+                    <li class="fragment fade-in">command line: 
+                    <br>
+                    <span style="color:#93a1a1">
+                    <span class="fragment fade-in">
+                    $ cd /Desktop/workshop
+                    </span>
+                    <br>
+                    <span class="fragment fade-in">
+                    $ python hello.py 
+                    </span>
+                    </span>
+                    </ol>
+                    </li>
+					</ol>
+                    <p class="fragment fade-in">
+                    now your turn
+                    <i class="fa fa-hand-o-right"></i>
 				</section>
                
 				<section>
@@ -68,10 +93,60 @@
                     <br>
                     (even your own)
 					</p>
-					<pre><code>
-                    [EXAMPLE]
+                    </section>
+                    <section>
+                <h1 style="text-transform: lowercase; font-size: 100px;">
+                <span style="color:#268bd2">import</span>  banana
+                </h1>
+                </section>
+                <section>
+                <i class="fa fa-magic"></i>
+                <i class="fa fa-graduation-cap"></i>
+                <h2>Names from a hat </h2>
+                <br>
+                <h1 style="text-transform: lowercase; font-size:50px;">
+                </h1>
+                <span style="font-size:69px" >
+					<pre><code data-trim>
+#Choose a Name from a Hat
+import random
+
+fruit = ['apple', 'banana', 'orange']
+
+random.choice(fruit)
                     </code></pre>
+                    </span>
+                    <p class="fragment fade-in">
+                    now your turn
+                    <i class="fa fa-hand-o-right"></i>
+                    </p>
 				</section>
+                    <section>
+                    <span class="fragment fade-in fade-out">
+                    What did we learn?
+                    </span>
+                    <br>
+                    <span style="color:#93a1a1">
+                    <span class="fragment fade-in">
+                    $ python hello.py 
+                    <br>
+                    <br>
+                    </span>
+                    </span>
+            <span style="font-size:60px">
+                <span class="fragment fade-in" style="color:#268bd2">
+                    import 
+                </span>
+                <span class="fragment fade-in">
+                    random
+                </span>
+                <span class="fragment fade-in" style="color:#586e75">
+                    <br>
+                    <br>
+                    #hashtag? 
+                </span>
+            </span>
+                    </section>
                 </section>
 
                 <!-- Dictionaries -->
@@ -79,26 +154,182 @@
 				<section>
                 <i class="fa fa-book"></i>
 					<h2>Why Dictionaries?</h2>
-					<p>
+					<p style="color:#93a1a1">
                     when lists are so wonderful...
 					</p>
-					<ul class="fragment fade-in">
-						<li>looking up</li>
-						<li>speed (linear time)</li>
-						<li>memory (plays nicely with json)</li>
+                    <p class="fragment fade-in">  
+                    and dictionaries are
+                    <font color="red">UNORDERED </font>
+                    </p>
+					<ul class="fragment fade-in" style="color:#2aa198">
+						<li class="fragment fade-in">word: definition (close associations)</li>
+						<li class="fragment fade-in">speed (constant time)</li>
+						<li class="fragment fade-in">memory (plays nicely with json)</li>
 					</ul>
-					<pre><code>
-                    [EXAMPLE]
-                    </code></pre>
 				</section>
+                <section>
+                <h1 style="text-transform: lowercase; font-size: 100px;">
+                {
+                <span style="color:#268bd2;" class="fragment fade-in">
+                word1: 
+                <span style="color:#2aa198">definition</span>
+                </span>
+                }
+                </h1>
+                </section>
+                <section data-transition="slide-in">
+                <h1 style="text-transform: lowercase; font-size: 100px;">
+                {
+                <span style="color:#268bd2;" class="fragment fade-in">
+                word1:
+                <span style="color:#2aa198">definition,</span>
+                &nbsp; &nbsp; word2:
+                <span style="color:#2aa198">definition</span>
+                </span>
+                }
+                </h1>
+                </section>
 				<section>
                 <i class="fa fa-book"></i>
 					<h2>Writing a Dictionary</h2>
-                    <p>dictioanry syntax, example, exercise</p>
-					<pre><code>
-                    [EXAMPLE]
+                    <p> so many emails to remember ;(</p>
+					<pre><code class="python fragment fade-in" style="font-size:33px;">
+#contacts
+emails = {'mark': 'mark@banana.com', 
+          'tom': 'cool@apple.com', 
+          'brendan': 'coolest@papya.com', 
+          'zev': 'zen@bahamas.com'}
                     </code></pre>
+            <div align="left" style="color: #93a1a1">
+                    <p class="fragment fade-in">
+                    #live code: 
+                    </p>
+                 <div style="padding-left:5em">   
+                    <p class="fragment fade-in">
+                        #look up zev's email
+                    </p>
+                    <p class="fragment fade-in">
+                        #add a new email
+                    </p >
+                    <p class="fragment fade-in">
+                        #change mark's email
+                    </p>
+                </div>
+            </div>
+                    <p class="fragment fade-in">
+                    now your turn
+                    <i class="fa fa-hand-o-right"></i>
 				</section>
+                <section>
+                <i class="fa fa-book"></i>
+					<h2>Playing with Dictionaries</h2>
+<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+                                <span style="color:#268bd2">
+                                len()
+                                </span>
+                                </td>
+                                <td>
+<pre><code class="fragment fade-in python" style="font-size: 30px">
+empty_dict = {}
+
+len(empty_dict)                  
+#show number of entries       
+</code></pre>
+                    </td>
+							<tr>
+							<tr>
+								<td>
+                                <span style="color:#268bd2">
+                                .get
+                                </span>
+                                </td>
+<td>
+<pre><code class="fragment fade-in python" style="font-size: 30px">
+empty_dict['mark'] 
+#uh oh, nothing's there!
+
+empty_dict.get('mark', 'cool')          
+#get to the rescue! 
+</code></pre>
+</td>
+							<tr>
+							<tr>
+								<td>
+                                <span style="color:#268bd2">
+                                .update
+                                </span>
+                                </td>
+<td>
+<pre><code class="fragment fade-in python" style="font-size: 30px">
+#two dictionaries --> one!
+
+empty_dict.update(existing_dict)
+
+</code></pre>
+</td>
+							<tr>
+						</tbody>
+					</table>
+                </section>
+                <section>
+                    <p class="fragment fade-in">
+                    now your turn
+                    <i class="fa fa-hand-o-right"></i>
+                    <br>
+                    (as a grocery store owner)
+                    <ol class="fragment fade-in">
+                    <li class="fragment fade-in">create inventory of fruit 
+                    <ul>
+                    <li>2 bananas, 1 apple, 5 oranges, 3 grapefruits
+                    </ul>
+                    </li>
+                    <li class="fragment fade-in">Tom buys 3 oranges
+                    <ul>
+                    <li>decrease the number of oranges to 2</li>
+                    </ul>
+                    </li>
+                    <li class="fragment fade-in">Expand store to veggies
+                    <ul>
+                    <li>add three veggies of your choice</li>
+                    </ul>
+                    </li>
+                    </ol>
+                    </p>
+                </section>
+
+                </section>
+                <section>
+                <i class="fa fa-cogs"></i>
+                <h2>Module 3: displaying answers</h2>
+                <ol>
+                <h3 style="color:#268bd2">First</h3>
+                <li>create a dictionary with questions and answers </li>
+                <li>display the answer to the first question</li>
+                <br>
+                <h3 style="color:#2aa198">Next</h3>
+                <li>assign a variable "question" to a random question<br>
+                <span style="color:#93a1a1; font-size:30px;">hint: remember import random</span>
+                </li>
+
+                <li>display answer based on variable</li>
+                <br>
+                <h3 style="color:#b58900;">Finally</h3>
+                <li>
+                create a function called "show_answer" <br>
+<span style="color:#93a1a1; font-size:30px;">
+                show_answer should take a question and display the answer
+</span>
+                </li>
+                </ol>
                 </section>
 
                 <!-- Loops -->
@@ -107,18 +338,156 @@
                 <i class="fa fa-circle-o-notch fa-spin"></i>
 					<h2>Caught in a loop</h2>
                     <p>iterating through lists, dictionaries</p>
-					<pre><code>
-                    [EXAMPLE]
+                    <br>
+                    <br>
+					<pre><code style="font-size:30px;">
+ names = ['mark', 'tom', 'zev', 'brendan']    
                     </code></pre>
 				</section>
+                <section>
+					<pre><code>
+                names = ['mark', 'tom', 'zev', 'brendan']
+                    </code></pre>
+                
+                <br>
+                <br>
+                <h1 style="text-transform: lowercase; font-size: 120px;">
+                <span style="color:#268bd2;" class="fragment fade-in">
+                for 
+                </span>
+                <span class="fragment fade-in">
+                name
+                </span>
+                <span style="color:#268bd2;" class="fragment fade-in">
+                in 
+                </span>
+                <span style="color:#b58900;" class="fragment fade-in">
+                names
+                </span>
+                </h1>
+                </section>
 				<section>
 					<h2>Keeping track of your steps</h2>
-                    <p>enumerate (beauty of python compared to C)</p>
-					<pre><code>
-                    [EXAMPLE]
-                    </code></pre>
+                    <p>enumerate 
+                    <span style="color:#93a1a1;" class="fragment fade-in">#beauty of python vs. C</span></p>
+                <br>
+                <h1 style="text-transform: lowercase; font-size: 50px;">
+                <span style="color:#268bd2;" class="fragment fade-in">
+                for 
+                </span>
+                <span class="fragment fade-in">
+                i, name
+                </span>
+                <span style="color:#268bd2;" class="fragment fade-in">
+                in 
+                </span>
+                <span class="fragment fade-in">
+                enumerate(
+                </span>
+                <span style="color:#b58900;" class="fragment fade-in">
+                names
+                </span>
+                <span class="fragment fade-in">
+                ):
+                </span>
+                <br>
+                <span style="color:#268bd2;" class="fragment fade-in">
+                print(
+                </span>
+                <span class="fragment fade-in">
+                i, name
+                </span>
+                <span style="color:#268bd2;" class="fragment fade-in">
+                )
+                </span>
+                </h1>
 				</section>
+                <section>
+                <h3>Step, break and wiggle with it</h3>
+<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+                                <span style="color:#268bd2">
+                                break
+                                </span>
+                                </td>
+                                <td>
+<pre><code class="fragment fade-in python" style="font-size: 28px">
+names = ['mark', 'tom', 'zev', 'brendan']      
+
+#print up to zev
+for name in names:
+    print name
+    if name == "zev":
+        break
+</code></pre>
+                    </td>
+							<tr>
+							<tr>
+								<td>
+                                <span style="color:#268bd2">
+                                continue
+                                </span>
+                                </td>
+<td>
+<pre><code class="fragment fade-in python" style="font-size: 28px">
+#print all names except tom's
+for name in names:
+    if name == 'tom':
+        continue
+    else:
+        print name
+</code></pre>
+</td>
+							<tr>
+						</tbody>
+					</table>
+
+                    <p class="fragment fade-in">
+                    now your turn
+                    <i class="fa fa-hand-o-right"></i>
+                    <br>
+                    (print names, skipping every other name)
+                </section>
 				</section>
+                <section>
+                <i class="fa fa-cogs"></i>
+                <h2>Module 4: keeping score</h2>
+                <ol>
+                <h3 style="color:#268bd2">First</h3>
+                <li>display each team name</li>
+<span style="color:#93a1a1; font-size:30px;">
+a loop is handy here!
+<br>
+</span>
+                <h3 style="color:#2aa198">Next</h3>
+                <li>create an empty dictionary of scores</li>
+                <li>enter each team into the dictionary with a score of 0</li>
+<span style="color:#93a1a1; font-size:30px;">
+remember to loop!
+<br>
+</span>
+                <h3 style="color:#b58900;">Finally</h3>
+        <p style="text-align: left">Create a Function to </p>
+                <li>
+                ask the user for each team's score 
+<span style="color:#93a1a1; font-size:30px;">
+</span>
+                </li>
+                <li>
+                update the score in the dictionary <br>
+<span style="color:#93a1a1; font-size:30px;">
+</span>
+                </li>
+                </ol>
+                </section>
 
 			</div>
 
