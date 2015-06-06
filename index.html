@@ -416,11 +416,13 @@ for name in names:
                                 </td>
 <td>
 <pre><code class="fragment fade-in python" style="font-size: 30px">
-empty_dict['mark'] 
-#uh oh, nothing's there!
-
-empty_dict.get('mark', 'cool')          
-#get to the rescue! 
+#print all names except tom's
+for name in names:
+    if name == 'tom':
+        continue
+    else:
+        print name
+        
 </code></pre>
 </td>
 							<tr>
